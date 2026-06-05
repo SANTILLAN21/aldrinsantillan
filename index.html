@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aldrin B. Santillan – Computer Science Student, Software Developer, OJT Candidate based in Tandag City, Philippines." />
+  <meta name="keywords" content="Aldrin Santillan, Computer Science, Software Developer, Java Developer, Web Developer, OJT, Philippines" />
+  <meta name="author" content="Aldrin B. Santillan" />
+  <meta property="og:title" content="Aldrin B. Santillan – Portfolio" />
+  <meta property="og:description" content="Computer Science Student | Software Developer | OJT Candidate" />
+  <meta property="og:type" content="website" />
+  <title>Aldrin B. Santillan – Portfolio</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
+  <div id="loader" role="status" aria-label="Loading">
+    <div class="loader-inner">
+      <img src="images/logo.png" alt="Aldrin Logo" class="loader-logo" onerror="this.style.display='none'; document.querySelector('.loader-text').style.display='block'" />
+      <p class="loader-text" style="display:none">AS</p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Primary Navigation">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <img src="images/logo.png" alt="Aldrin Santillan Logo" onerror="this.parentElement.innerHTML='<span class=\'logo-text\'>AS</span>'" />
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="darkToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="noise"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Left -->
+        <div class="hero-content reveal">
+          <p class="hero-eyebrow"><span class="dot"></span>Available for OJT 2026</p>
+          <h1 class="hero-name">Aldrin B.<br /><em>Santillan</em></h1>
+          <p class="hero-role">
+            <span class="role-prefix">I am a </span>
+            <span id="typingText" class="typing-text" aria-live="polite"></span>
+            <span class="cursor-blink">|</span>
+          </p>
+          <p class="hero-intro">Motivated and hardworking Computer Science student passionate about software development, database systems, and modern web technologies.</p>
+
+          <div class="hero-buttons">
+            <a href="resume/Aldrin_Santillan_CV.pdf" download class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:absantillan@nemsu.edu.ph" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Right – Profile -->
+        <div class="hero-image reveal reveal-right">
+          <div class="profile-ring">
+            <div class="profile-frame">
+              <img src="images/profile.jpg" alt="Aldrin B. Santillan" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Aldrin+Santillan&size=400&background=FF6B35&color=fff&bold=true'" />
+            </div>
+            <div class="ring r1" aria-hidden="true"></div>
+            <div class="ring r2" aria-hidden="true"></div>
+            <div class="float-badge badge-java" aria-hidden="true"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="float-badge badge-py" aria-hidden="true"><i class="fa-brands fa-python"></i> Python</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-card reveal">
+            <span class="stat-num" data-target="8">0</span>
+            <span class="stat-label">Academic Projects</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-num" data-target="7">0</span>
+            <span class="stat-label">Languages Learned</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-num" data-target="9">0</span>
+            <span class="stat-label">Technologies Used</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">Years of Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" aria-label="About Me">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <p class="section-tag">Who I Am</p>
+          <h2 class="section-title">About <em>Me</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="about-lead">I'm <strong>Aldrin B. Santillan</strong>, a driven Computer Science student from NEMSU with a strong foundation in Java, Python, and web technologies. I'm currently seeking an OJT opportunity to apply academic knowledge in a real-world environment.</p>
+            <p>My journey in tech started with curiosity about how software works. Today that curiosity has evolved into hands-on experience building desktop applications, managing databases, and exploring machine learning concepts.</p>
+            <p>I thrive in collaborative environments and bring a blend of technical skill and communication to every project I undertake.</p>
+          </div>
+
+          <div class="about-card glass reveal reveal-right">
+            <ul class="info-list" role="list">
+              <li>
+                <span class="info-icon"><i class="fa-solid fa-user"></i></span>
+                <div><strong>Full Name</strong><span>Aldrin B. Santillan</span></div>
+              </li>
+              <li>
+                <span class="info-icon"><i class="fa-solid fa-flag"></i></span>
+                <div><strong>Nationality</strong><span>Filipino</span></div>
+              </li>
+              <li>
+                <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div><strong>Address</strong><span>Tandag City, Surigao del Sur, PH</span></div>
+              </li>
+              <li>
+                <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div><strong>Email</strong><span><a href="mailto:absantillan@nemsu.edu.ph">absantillan@nemsu.edu.ph</a></span></div>
+              </li>
+              <li>
+                <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                <div><strong>Phone</strong><span>09387259233</span></div>
+              </li>
+              <li>
+                <span class="info-icon"><i class="fa-solid fa-briefcase"></i></span>
+                <div><strong>Status</strong><span>Open to OJT Opportunities</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section id="skills" class="section-alt" aria-label="Skills">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <p class="section-tag">What I Know</p>
+          <h2 class="section-title">My <em>Skills</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Technical Skills -->
+          <div class="skills-col reveal">
+            <h3 class="skills-subtitle"><i class="fa-solid fa-code"></i> Technical Skills</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>Java Programming</span><span class="skill-pct">85%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>Java Swing GUI</span><span class="skill-pct">80%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>Python Programming</span><span class="skill-pct">75%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="75"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>MySQL Database</span><span class="skill-pct">80%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>OOP Concepts</span><span class="skill-pct">85%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>HTML / CSS</span><span class="skill-pct">78%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="78"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>JavaScript</span><span class="skill-pct">65%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="65"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>Data Structures & Algorithms</span><span class="skill-pct">72%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="72"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-head"><span>Arduino Programming</span><span class="skill-pct">60%</span></div>
+                <div class="bar-track"><div class="bar-fill" data-pct="60"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skills-col reveal reveal-right">
+            <h3 class="skills-subtitle"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+            <div class="soft-skills-grid">
+              <div class="soft-card glass"><i class="fa-solid fa-people-group"></i><span>Teamwork</span></div>
+              <div class="soft-card glass"><i class="fa-solid fa-handshake"></i><span>Collaboration</span></div>
+              <div class="soft-card glass"><i class="fa-solid fa-comments"></i><span>Communication</span></div>
+              <div class="soft-card glass"><i class="fa-solid fa-puzzle-piece"></i><span>Problem Solving</span></div>
+              <div class="soft-card glass"><i class="fa-solid fa-clock"></i><span>Time Management</span></div>
+              <div class="soft-card glass"><i class="fa-solid fa-arrows-rotate"></i><span>Adaptability</span></div>
+              <div class="soft-card glass"><i class="fa-solid fa-bolt"></i><span>Fast Learner</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="section-header reveal" style="margin-top:5rem">
+          <p class="section-tag">Tools & Technologies</p>
+          <h2 class="section-title">Tech <em>Stack</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="tech-grid reveal">
+          <div class="tech-card glass"><i class="fa-brands fa-java tech-icon" style="color:#e76f00"></i><span>Java</span></div>
+          <div class="tech-card glass"><i class="fa-brands fa-python tech-icon" style="color:#3776ab"></i><span>Python</span></div>
+          <div class="tech-card glass"><i class="fa-solid fa-database tech-icon" style="color:#00758f"></i><span>MySQL</span></div>
+          <div class="tech-card glass"><i class="fa-brands fa-html5 tech-icon" style="color:#e34f26"></i><span>HTML5</span></div>
+          <div class="tech-card glass"><i class="fa-brands fa-css3-alt tech-icon" style="color:#264de4"></i><span>CSS3</span></div>
+          <div class="tech-card glass"><i class="fa-brands fa-js tech-icon" style="color:#f7df1e"></i><span>JavaScript</span></div>
+          <div class="tech-card glass"><i class="fa-brands fa-git-alt tech-icon" style="color:#f05032"></i><span>Git</span></div>
+          <div class="tech-card glass"><i class="fa-brands fa-github tech-icon"></i><span>GitHub</span></div>
+          <div class="tech-card glass"><i class="fa-solid fa-microchip tech-icon" style="color:#00979d"></i><span>Arduino</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section id="education" aria-label="Education">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <p class="section-tag">My Background</p>
+          <h2 class="section-title">Edu<em>cation</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="tl-card glass">
+              <p class="tl-date">2023 – Present</p>
+              <h3 class="tl-school">North Eastern Mindanao State University</h3>
+              <p class="tl-degree">Bachelor of Science in Computer Science</p>
+              <p class="tl-desc">A higher education institution committed to providing quality education and developing competent, innovative, and socially responsible graduates.</p>
+              <div class="tl-badge">Undergraduate</div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-school"></i></div>
+            <div class="tl-card glass">
+              <p class="tl-date">Graduated 2023</p>
+              <h3 class="tl-school">Lapinigan National Senior High School</h3>
+              <p class="tl-degree">Senior High School</p>
+              <p class="tl-desc">Completed Senior High School education with focus on academic excellence and community involvement.</p>
+              <div class="tl-badge">Completed</div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-book"></i></div>
+            <div class="tl-card glass">
+              <p class="tl-date">Graduated 2021</p>
+              <h3 class="tl-school">Lapinigan National High School</h3>
+              <p class="tl-degree">Junior High School</p>
+              <p class="tl-desc">Completed Junior High School with strong academic performance and active participation in school activities.</p>
+              <div class="tl-badge">Completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects" class="section-alt" aria-label="Projects">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <p class="section-tag">What I've Built</p>
+          <h2 class="section-title">Academic <em>Projects</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card glass reveal" aria-label="Banking System">
+            <div class="project-img-wrap">
+              <div class="project-placeholder" data-label="Banking System">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-details" onclick="openModal('banking')">View Details</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-role">Lead Developer</div>
+              <h3>Banking System</h3>
+              <p>Full-featured banking application with user registration, login system, and complete database management via MySQL.</p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Swing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" aria-label="Hotel Booking System">
+            <div class="project-img-wrap">
+              <div class="project-placeholder" data-label="Hotel Booking">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-details" onclick="openModal('hotel')">View Details</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-role">Lead Developer</div>
+              <h3>Hotel Booking System</h3>
+              <p>Room reservation and customer management system with integrated database for seamless booking workflows.</p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Swing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" aria-label="Machine Learning Data Analysis">
+            <div class="project-img-wrap">
+              <div class="project-placeholder" data-label="ML Analysis">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-details" onclick="openModal('ml')">View Details</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-role">Data Analyst</div>
+              <h3>ML Data Analysis</h3>
+              <p>Data cleaning, preprocessing, and visualization pipeline with trend prediction using Python machine learning techniques.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">ML</span>
+                <span class="tag">Data Viz</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" aria-label="Fitness Tracker">
+            <div class="project-img-wrap">
+              <div class="project-placeholder" data-label="Fitness Tracker">
+                <i class="fa-solid fa-heartbeat"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-details" onclick="openModal('fitness')">View Details</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-role">System Architect</div>
+              <h3>Fitness Tracker App</h3>
+              <p>Health monitoring system designed with SDLC planning and comprehensive workflow design for fitness tracking.</p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">SDLC</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+    <section id="certifications" aria-label="Certifications">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <p class="section-tag">Achievements</p>
+          <h2 class="section-title">Certifi<em>cations</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card glass reveal">
+            <div class="cert-img-wrap">
+              <div class="cert-placeholder"><i class="fa-solid fa-certificate"></i></div>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Title</h3>
+              <p>Issuing Organization</p>
+              <span class="cert-date">Coming Soon</span>
+            </div>
+          </div>
+          <div class="cert-card glass reveal">
+            <div class="cert-img-wrap">
+              <div class="cert-placeholder"><i class="fa-solid fa-award"></i></div>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Title</h3>
+              <p>Issuing Organization</p>
+              <span class="cert-date">Coming Soon</span>
+            </div>
+          </div>
+          <div class="cert-card glass reveal">
+            <div class="cert-img-wrap">
+              <div class="cert-placeholder"><i class="fa-solid fa-medal"></i></div>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Title</h3>
+              <p>Issuing Organization</p>
+              <span class="cert-date">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Download -->
+        <div class="resume-section reveal" id="resume">
+          <div class="resume-card glass">
+            <div class="resume-icon"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="resume-text">
+              <h3>My Resume</h3>
+              <p>Download my complete CV to learn more about my background, skills, and academic experience.</p>
+            </div>
+            <a href="resume/Aldrin_Santillan_CV.pdf" download class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section-alt" aria-label="Contact">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="section-title">Contact <em>Me</em></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info -->
+          <div class="contact-info reveal">
+            <p class="contact-intro">I'm currently looking for OJT opportunities. Whether you have a question or just want to say hello, my inbox is always open!</p>
+
+            <div class="contact-items">
+              <a href="mailto:absantillan@nemsu.edu.ph" class="contact-item glass">
+                <span class="ci-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div><strong>Email</strong><span>absantillan@nemsu.edu.ph</span></div>
+              </a>
+              <a href="tel:09387259233" class="contact-item glass">
+                <span class="ci-icon"><i class="fa-solid fa-phone"></i></span>
+                <div><strong>Phone</strong><span>09387259233</span></div>
+              </a>
+              <div class="contact-item glass">
+                <span class="ci-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div><strong>Address</strong><span>Tandag City, Surigao del Sur, Philippines</span></div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form glass reveal reveal-right">
+            <div id="formSuccess" class="form-success" role="alert" aria-live="polite" style="display:none">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Thanks! I'll get back to you soon.</p>
+            </div>
+            <div id="contactFormWrap">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your Name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email</label>
+                  <input type="email" id="femail" name="email" placeholder="Your Email" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="fsubject">Subject</label>
+                <input type="text" id="fsubject" name="subject" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <label for="fmessage">Message</label>
+                <textarea id="fmessage" name="message" rows="5" placeholder="Your message…" required></textarea>
+              </div>
+              <button type="button" id="submitBtn" class="btn btn-primary btn-full" onclick="submitForm()">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo footer-logo" aria-label="Back to top">
+          <img src="images/logo.png" alt="Aldrin Santillan Logo" onerror="this.parentElement.innerHTML='<span class=\'logo-text\'>AS</span>'" />
+        </a>
+        <p>Aldrin B. Santillan</p>
+        <small>Computer Science Student | OJT Candidate</small>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer Navigation">
+        <strong>Quick Links</strong>
+        <ul role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <strong>Connect</strong>
+        <div class="social-row">
+          <a href="https://github.com/SANTILLAN21" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/aldrin.santillan.7509" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://mail.google.com/mail/u/1/#inbox" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Aldrin B. Santillan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ═══════════════ PROJECT MODALS ═══════════════ -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-box glass">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <h2 id="modalTitle">Project Details</h2>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
